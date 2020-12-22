@@ -23,6 +23,7 @@ public class ChapterThreeEnd {
 		 
 	}
 	
+	@SuppressWarnings("resource")
 	private boolean gameRockScissorsPaper(String[] computer) {
 		boolean gameFlag = true;	// Whether or not to play the game
 		

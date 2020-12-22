@@ -77,6 +77,7 @@ class Player {
 		this.name = name;
 	}
 	
+	@SuppressWarnings("resource")
 	String getWordFromUser() {
 		Scanner sc = new Scanner(System.in); // resource leak..
 		System.out.printf("%s>> ", name);
