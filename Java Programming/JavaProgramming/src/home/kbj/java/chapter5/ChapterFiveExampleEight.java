@@ -54,13 +54,15 @@ class PositivePoint extends Point{
 	
 	PositivePoint(int x, int y) {
 		super(x, y);
+		if(x < 0 || y < 0)
+			super.move(0, 0);
 	}
 	
 	@Override
 	protected void move(int x, int y) {
 		// TODO Auto-generated method stub
-		if(getX() < 0 || getY() < 0)
-			super.move(getX(), getY());
+		if(x < 0 || y < 0)
+			return;
 		else
 			super.move(x, y);
 	}
