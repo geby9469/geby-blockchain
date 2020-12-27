@@ -11,13 +11,13 @@ public class ChapterFiveExampleEight {
 		// TODO Auto-generated method stub
 		PositivePoint p = new PositivePoint();
 		p.move(10, 10);
-		System.out.println("it is %s", p.toString());
+		System.out.printf("it is the point of %s \n", p.toString());
 		
-		p.move(-5, 5);
-		System.out.println("it is %s", p.toString());
+		p.move(-5, 5);	// don't move negative space
+		System.out.printf("it is the point of %s \n", p.toString());
 		
 		PositivePoint p2 = new PositivePoint(-10, -10);
-		System.out.println("it is %s", p2.toString());
+		System.out.printf("it is the point of %s \n", p2.toString());
 		
 	}
 
@@ -46,6 +46,34 @@ class Point {
 	}
 }
 
+class PositivePoint extends Point{
+	
+	public PositivePoint() {
+		super(0, 0);
+	}
+	
+	PositivePoint(int x, int y) {
+		super(x, y);
+	}
+	
+	@Override
+	protected void move(int x, int y) {
+		// TODO Auto-generated method stub
+		if(getX() < 0 || getY() < 0)
+			super.move(getX(), getY());
+		else
+			super.move(x, y);
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "("+getX()+","+getY()+")";
+	}
+}
+
 /* result
  * Is the point of (10,10)
+ * Is the point of (10,10)
+ * Is the point of (0,0)
  */
