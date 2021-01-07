@@ -17,7 +17,7 @@ public class ChapterEightExampleEleven {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SearchWord sw = new SearchWord("C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8", "words.txt");
+		SearchWord sw = new SearchWord("./", "words.txt");
 		
 		sw.searchWord();
 	}

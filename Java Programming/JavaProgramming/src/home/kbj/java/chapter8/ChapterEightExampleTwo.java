@@ -9,8 +9,7 @@ public class ChapterEightExampleTwo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String url = "C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8\\phone.txt";
-		url.replace("\\", File.separator);
+		String url = "phone.txt";
 		File file = new File(url);
 		
 		try (

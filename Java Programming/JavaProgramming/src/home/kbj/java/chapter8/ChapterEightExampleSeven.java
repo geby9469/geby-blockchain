@@ -16,10 +16,8 @@ public class ChapterEightExampleSeven {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String sourceURL = "C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8\\Ryan.jpg";
-		String destinationURL = "C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8\\Ryan_copy.jpg";
-		sourceURL.replace("\\", File.separator);
-		destinationURL.replace("\\", File.separator);
+		String sourceURL = "Ryan.jpg";
+		String destinationURL = "Ryan_copy.jpg";
 		
 		File srcFile = new File(sourceURL);
 		File destFile = new File(destinationURL);

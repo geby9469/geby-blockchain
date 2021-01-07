@@ -11,9 +11,8 @@ public class ChapterEightExampleNine {
 	}
 	
 	static void deleteFile() {
-		String directoryPath = "C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8";
+		String directoryPath = "./";
 		String fileType = ".txt";
-		directoryPath.replace("\\", File.separator);
 		File file = new File(directoryPath);
 
 		File[] fileList = file.listFiles();

@@ -10,8 +10,7 @@ public class ChapterEightExampleOne {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String url = "C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8\\phone.txt";
-		url.replace("\\", File.separator);
+		String url = "phone.txt";
 		File file = new File(url);
 		
 		System.out.println("Phone number input program.");
@@ -28,7 +27,7 @@ public class ChapterEightExampleOne {
 				
 				fw.write(line + "\r\n");
 			}
-			System.out.println("Saved in C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8\\phone.txt");
+			System.out.printf("Saved in %s", url);
 			
 		}
 		catch (IOException e) {
