@@ -33,7 +33,7 @@ class HangMan {
 	
 	
 	HangMan() {
-		String path = "C:\\Users\\black\\Desktop\\BJK\\Git\\LocalStorage\\Java Programming\\JavaProgramming\\src\\home\\kbj\\java\\chapter8\\words.txt";
+		String path = "words.txt";
 		file = new File(path.replace("\\", File.separator));
 		words = new Vector<>((int)file.length());
 		tryCount = 0;

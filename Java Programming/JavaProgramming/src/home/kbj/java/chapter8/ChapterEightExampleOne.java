@@ -44,5 +44,5 @@ public class ChapterEightExampleOne {
  * 전화번호 입력 프로그램입니다.		Phone number input program
  * 이름 전화번호 >> 황기태 010-5555-7777 
  * 이름 전화번호 >> 그만
- * C:\Users\black\Desktop\BJK\Git\LocalStorage\Java Programming\JavaProgramming\src\home\kbj\java\chapter8\\phone.txt에 저장하였습니다. 
+ * phone.txt에 저장하였습니다. 
  * */

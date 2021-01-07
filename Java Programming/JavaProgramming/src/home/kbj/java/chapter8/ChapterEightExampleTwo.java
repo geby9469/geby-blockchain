@@ -38,6 +38,6 @@ public class ChapterEightExampleTwo {
 }
 
 /* result
- * C:\Users\black\Desktop\BJK\Git\LocalStorage\Java Programming\JavaProgramming\src\home\kbj\java\chapter8\\phone.txt을 출력합니다.
+ * phone.txt을 출력합니다.
  * */
 
