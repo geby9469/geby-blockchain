@@ -6,13 +6,6 @@ window.addEventListener('load', () => {
     const moreTxt = document.querySelector('.more_txt');
     const more = document.querySelector('.more');
 
-    console.log(like);
-    console.log(disLike);
-    console.log(disLikeNum);
-    console.log(upAndDown);
-    console.log(moreTxt);
-    console.log(more);
-
     like.addEventListener('click', (e) => {
         e.preventDefault(); // Don't move new link and execution.
 
