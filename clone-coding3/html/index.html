@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="left-menu">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" title="Youtube 홈" class="logo">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span></a>
+        </div>
+        <div class="center-menu">
+            <input type="text" placeholder="검색"><button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="right-menu">
+            <a href title="검색"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href title="동영상 또는 게시물 만들기"><i class="fa-solid fa-video"></i></a>
+            <a href title="알림"><i class="fa-solid fa-bell"></i></a>
+            <a href class="user">봉준</a>
+        </div>
+    </header>
+    <main>
+        <section class="video">
+            <div class="wrap">
+                <iframe src="https://www.youtube.com/embed/zhK4dTGiDhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="video-info">
+            <h1 class="title">Red Hot Chili Peppers: Black Summer | The Tonight Show Starring Jimmy Fallon</h1>
+            <div class="etc">
+                <div class="left-etc">
+                    조회수 82만회
+                </div>
+                <ul class="right-etc">
+                    <li class="upAndDown"><a href="#" title="좋아요취소" class="selected" id="like"><i class="fa-solid fa-thumbs-up"></i>2.4만</a></li>
+                    <li class="upAndDown"><a href="#" title="싫어요" id="dislike"><i class="fa-solid fa-thumbs-down"></i>0</a></li>
+                    <li><a href="#" title="공유"><i class="fa-solid fa-share"></i>공유</a></li>
+                    <li><a href="#" title="저장"><i class="fa-solid fa-plus"></i>저장</a></li>
+                    <li><a href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+                </ul>
+            </div>
+            <div class="creator-info">
+                <div class="top">
+                    <a href="https://www.youtube.com/watch?v=zhK4dTGiDhc"><img src="../images/profile.jpg"></a>
+                    <div class="name">
+                        <h2>
+                            <a href="https://www.youtube.com/watch?v=zhK4dTGiDhc" title="RHCP - black summer live">creator</a>
+                        </h2>
+                        <br>
+                        <span>구독자 45만명</span>
+                    </div>
+                    <div class="subscribe">
+                        <button>구독중</button>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="disc">
+                        <p>RHCP - black summer live</p>
+                        <p class="more" style="display: none;">
+                            contents
+                            <br>
+                            <span class="time">2:08</span>
+                            <br>
+                            <a href="#" target="_blank">link</a>
+                            <br>
+                            <span class="category">카테고리</span>
+                            <span class="scienceTech">과학기술</span>
+                        </p>
+                        <span class="more_txt">더보기</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="next-video">
+            <div class="title">
+                <h2>다음동영상</h2>
+                <span>자동재생</span>
+            </div>
+            <div class="videos first">
+                <img src="../images/nextVideo1.jpg">
+                <div class="info">
+                    <div class="top">
+                        <h2>RHCP - Snow</h2>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <span>creator1</span>
+                    <span>조회수 32만회</span>
+                </div>
+            </div>
+            <div class="videos">
+                <img src="../images/nextVideo2.jpg">
+                <div class="info">
+                    <div class="top">
+                        <h2>RHCP - Californication</h2>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <span>creator2</span>
+                    <span>조회수 16만회</span>
+                </div>
+            </div>
+            <div class="videos">
+                <img src="../images/nextVideo3.jpg">
+                <div class="info">
+                    <div class="top">
+                        <h2>RHCP-Tell me baby</h2>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <span>creator3</span>
+                    <span>조회수 85만회</span>
+                </div>
+            </div>
+            <button class="moreBtn">더보기</button>
+        </section>
+        <section class="video-comment">
+            <div class="util">
+                <h2>댓글 58개</h2>
+                <span>정렬 기준</span>
+            </div>
+            <div class="add-comment">
+                <a href class="user">봉준</a>
+                <div class="right">
+                    <input text="text" placeholder="공개 댓글 추가...">
+                    <div class="btn">
+                        <button>취소</button>
+                        <button>댓글</button>
+                    </div>
+                </div>
+            </div>
+            <div class="user-container">
+                <img src="../images/profile.jpg">
+                <div class="right">
+                    <p class="fixed">creator님이 고정함</p>
+                    <span class="name creator">creator</span>
+                    <span class="modi">1주 전(수정됨)</span>
+                    <p class="user-comment">Is this reality?</p>
+                    <i class="fa-solid fa-thumbs-up"> 7</i>
+                    <i class="fa-solid fa-thumbs-down"></i>
+                    <img src="../images/like.jpg">
+                    <span>답글</span>
+                </div>
+            </div>
+            <div class="user-container">
+                <img src="../images/user1.jpg">
+                <div class="right">
+                    <span class="name">geby</span>
+                    <span class="modi">1주 전</span>
+                    <p class="user-comment">I'm coming back</p>
+                    <i class="fa-solid fa-thumbs-up"> 2</i>
+                    <i class="fa-solid fa-thumbs-down"></i>
+                    <img src="../images/like.jpg">
+                    <span>답글</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/index.js"></script>
+</body>
+</html>
