@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC-PAGE</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li><button class="admin-btn">Admin</button></li>
+                <li><button class="user-btn">User</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="admin-wallet">
+        <div class="container">
+            <h2><em>Administrator wallet</em></h2>
+            <form action="#" method="get" name="adminform">
+                <fieldset class="outer">
+                    <legend>Administrator Information</legend>
+                        <p>
+                            <label for="admin-address">Administrator address</label>
+                            <input type="text" id="admin-address">
+                        </p>
+                    <fieldset class="inner">
+                        <legend>Role-management</legend>
+                        <p>
+                            <label for="admin-user-address">User address</label>
+                            <input type="text" id="admin-user-address">
+                        </p>
+                        <p>
+                            <label for="admin-user-role">User role</label>
+                            <input type="text" id="admin-user-role">
+                        </p>
+                        <p>
+                            <button class="add-btn">Add</button>
+                            <button class="delete-btn">Delete</button>
+                        </p>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <section class="user-wallet">
+        <div class="container">
+            <h2><em>User Wallet</em></h2>
+            <form action="#" method="get" name="userform">
+                <fieldset class="outer">
+                    <legend>User Information</legend>
+                        <p>
+                            <label for="user-user-address">User address</label>
+                            <input type="text" id="user-user-address">
+                        </p>
+                        <p>
+                            <label for="user-user-role">User role</label>
+                            <input type="text" id="user-user-role">
+                        </p>
+                        <p>
+                            <label for="user-user-balance">User balance</label>
+                            <input type="text" id="user-user-balance"><span>Ether</span>
+                        </p>
+                        <p>
+                            <label for="user-remittance-amount">Remittance amount</label>
+                            <input type="text" id="user-remittance-amount"><span>Ether</span>
+                        </p>
+                        <p>
+                            <button class="get-balance-btn">Inquiry balance</button>
+                            <button class="send-ether-btn">Send</button>
+                        </p>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <script src="../js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
