@@ -1,7 +1,7 @@
 'use strict';
 
-const administratorAddress = 'administrator-public-address';
-const userAddress = 'administrator-private-address';
+const administratorAddress = '0x096616a0e8e93e8245274b035e8d33f6951a3089';
+const userAddress = 'user-private-address';
 
 window.addEventListener('load', () => {
     // accounts
@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
             .catch((err) => {
                 console.error(err.code); 
             });
+            // console.log(accounts);
         whichType(accounts[0]);
     }
     enableMetaMask();
@@ -91,6 +92,8 @@ addButton.addEventListener('click', (e) => {
         swal('Please input user role.');
         return;
     }
+
+    //
 });
 // delete button
 const deleteButton = document.querySelector('.delete-btn');
