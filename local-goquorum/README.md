@@ -8,11 +8,11 @@ vagrant up
 ## ssh(putty)
 SSH를 이용하여 접속
 
-## start
+## Start
 ```console
 npx quorum-dev-quickstart
 ```
 
-## reference
+## Reference
 
 1. [GoQuorum Developer Quickstart](https://consensys.net/docs/goquorum//en/latest/tutorials/quorum-dev-quickstart/#run-quorum-developer-quickstart)
