@@ -22,5 +22,8 @@ sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update -y
 sudo apt-get install -y solc
 
-# install quorum-blockchain
-# npx quorum-dev-quickstart
+# install geth
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update -y
+sudo apt-get install -y ethereum
+sudo apt-get upgrade -y geth

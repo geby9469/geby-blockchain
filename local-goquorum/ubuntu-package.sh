@@ -14,3 +14,6 @@ sudo apt-get install vim
 
 # public-key
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 0EBFCD88
+
+
+

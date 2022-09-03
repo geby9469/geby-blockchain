@@ -15,9 +15,10 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision :docker
   config.vm.provision :docker_compose
-  config.vm.provision "ubuntu-package", type: "shell", path: "./ubuntu-package.sh"
   config.vm.provision "install-configuration", type: "shell", privileged: false do |s|
     s.path = "./install-configuration.sh"
+  config.vm.provision "ubuntu-package", type: "shell", path: "./ubuntu-package.sh"
+  # config.vm.provision "quorum-starter", type: "shell", path: "./quorum-starter.sh"
   end
  
 end
