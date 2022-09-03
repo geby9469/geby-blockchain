@@ -81,8 +81,9 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="../lib/web3.min.js"></script>
     <script type="text/javascript">
-        // var web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'));
-        // console.log(web3);
+        // web3.js
+        const httpWeb3 = new Web3(new Web3.providers.HttpProvider('http://192.168.56.2:8545'));
+        const socketWeb3 = new Web3(new Web3.providers.WebsocketProvider('ws://192.168.56.2:8546'));
     </script>
 </body>
 </html>

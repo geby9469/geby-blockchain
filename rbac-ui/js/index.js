@@ -1,7 +1,10 @@
 'use strict';
 
-const administratorAddress = '0x096616a0e8e93e8245274b035e8d33f6951a3089';
-const userAddress = 'user-private-address';
+const lowerAdministratorAddress = '0x096616a0E8E93e8245274B035E8D33f6951A3089'.toLowerCase();
+const administratorAddress = '0x096616a0E8E93e8245274B035E8D33f6951A3089';
+const lowerUserAddress = '0xFE3B557E8Fb62b89F4916B721be55cEb828dBd73'.toLowerCase();
+const userAddress = '0xFE3B557E8Fb62b89F4916B721be55cEb828dBd73';
+
 
 window.addEventListener('load', () => {
     // accounts
@@ -13,7 +16,7 @@ window.addEventListener('load', () => {
             .catch((err) => {
                 console.error(err.code); 
             });
-            // console.log(accounts);
+            console.log(accounts);
         whichType(accounts[0]);
     }
     enableMetaMask();
@@ -68,7 +71,7 @@ const whichType = function(account) {
 
 /* Administrator wallet */
 const isAdministrator = function (account) {
-    if(account === administratorAddress) {
+    if(account === lowerAdministratorAddress) {
         return true;
     }
     return false;
@@ -78,23 +81,22 @@ const addButton = document.querySelector('.add-btn');
 addButton.addEventListener('click', (e) => {
     e.preventDefault();
     const adminAddr = document.querySelector('#admin-address').value;
-    if(!adminAddr) {
+    if (!adminAddr) {
         swal('Please choose admin address in MetaMask.');
         return;
     }
     const userAddr = document.querySelector('#admin-user-address').value;
-    if(!userAddr) {
+    if (!userAddr) {
         swal('Please input user address.');
         return;
     }
     const userRole = document.querySelector('#admin-user-role').value;
-    if(!userRole) {
+    if (!userRole) {
         swal('Please input user role.');
         return;
     }
-
-    //
 });
+
 // delete button
 const deleteButton = document.querySelector('.delete-btn');
 deleteButton.addEventListener('click', (e) => {
@@ -114,7 +116,7 @@ deleteButton.addEventListener('click', (e) => {
 
 /* User wallet */
 const isUser = function (account) {
-    if(account === userAddress) {
+    if(account === lowerUserAddress) {
         return true;
     }
     return false;
