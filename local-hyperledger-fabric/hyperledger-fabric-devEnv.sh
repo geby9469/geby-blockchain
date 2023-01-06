@@ -35,6 +35,7 @@ sudo apt-get update
 sudo apt-get install golang-1.11.1-go
 # export GOPATH=$HOME/go
 # export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# export PATH=$PATH:/usr/lib/go-1.11/bin
 mkdir -p $HOME/go/{src,pkg,bin}
 
 # python
@@ -43,6 +44,7 @@ sudo apt install -y python
 # node.js, npm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | sudo bash -
 sudo chown -R vagrant:vagrant .nvm
+# sudo reboot
 nvm install 8
 nvm use 8
 npm install npm@5.6.0 -g
@@ -56,7 +58,7 @@ sudo apt install -y openjdk-8-jdk openjdk-8-jre
 sudo apt install -y gradle
 
 # Hyperledger fabric
-cd $GOPATH
+cd $GOPATH/src
 curl -sSL https://bit.ly/2ysbOFE | sudo bash -s
 
 # Hyperledger Composer
